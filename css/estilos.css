@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(https://img.freepik.com/vector-gratis/diseno-fondo-blanco-estilo-perspectiva-3d-forma-hexagonal_1017-27558.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    display: flex;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 11%,
+      rgba(255, 255, 255, 1) 19%,
+      rgba(2, 0, 36, 1) 46%
+    );
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    left: 0%;
+    right: 0%;
+  }
+  
+  .espacio {
+    margin-top: 3%;
+    text-decoration: overline #1e1e39;
+    font-style: serif;
+    font-size: 2.5em;
+  }
+  
+  .presentacion {
+    margin: 1.5%;
+    font-size: 1.1em;
+  }
+  
+  .cuadrosInd {
+    border: solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 7, 41);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4em;
+    position: relative;
+    max-width: 400px;
+  }
+  
+  .cuadrosInd:hover{
+    border-color: #406882;
+  }
+  
+  nav ul {
+    display: flex;
+    background-color: #1a374d;
+  }
+  
+  .contenedor {
+    display: inline;
+    color: white;
+  }
+  
+  .marca {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .marca:hover{
+    color: #406882;
+  }
+  
+  nav li {
+    flex: auto;
+    border: #1a374d 2px solid;
+    color: white;
+  }
+  
+  .centrado {
+    text-align: center;
+  }
+  
+  h1 {
+    color: rgb(18, 11, 58);
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .imagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "imagenesA imagenesA imagenesA"
+      "imagenesB imagenesB imagenesB"
+      "imagenesC imagenesC imagenesC"
+      ". .";
+    justify-items: normal;
+    align-items: stretch;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+  }
+  
+  .imagenes img:hover{
+    transform: scale(1.5);
+    transition: .5s;
+  }
+  
+  .imagenes h3 {
+    background-color: #1e1e39;
+    color: white;
+  }
+  
+  .imagenesA {
+    grid: imagenesA;
+    border: #1a374d 2px solid;
+    border-radius: 3%;
+    margin: auto;
+  }
+  
+  .imagenesB {
+    grid: imagenesB;
+    border: #1a374d 2px solid;
+    border-radius: 3%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  
+  .imagenesC {
+    grid: imagenesC;
+    border: #1a374d 2px solid;
+    border-radius: 3%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  
+  p {
+    color: rgb(9, 55, 77);
+  }
+  
+  .cuadroColor {
+    color: rgb(255, 255, 255);
+    border: solid black 1px;
+    height: 25%;
+    width: 90%;
+    background-color: rgb(8, 58, 73);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  ul ul {
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+    left: 0.5rem;
+    color: rgb(8, 8, 37);
+    text-decoration: none;
+    display: none;
+  }
+  
+  ul ul li {
+    display: block;
+  }
+  
+  .banner {
+    background-color: #1e1e39;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    color: white;
+  }
+  
+  /* flexbox */
+  #padreFlex {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(3, 7, 41);
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+  
+  #hijoFlex {
+    background-color: rgb(9, 55, 77);
+    color: black;
+    padding: 0.2em;
+    border: solid 3px black;
+    margin: 0%;
+  }
+  
+  .medio {
+    margin: auto;
+    background-color: rgb(9, 55, 77);
+    color: white;
+    border: solid 7px black;
+  }
+  
+  .pie {
+    display: grid;
+    margin: 0;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-columns: 250px 250px;
+    justify-content: space-evenly;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 10px;
+    row-gap: 50px;
+    background-color: rgba(2, 0, 36, 1);
+    position: relative;
+  }
+  
+  .mediosPago {
+    text-align: center;
+    height: 80%;
+    width: 90%;
+    margin-top: 8%;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #406882;
+    border: solid 3px black;
+    position: relative;
+    right: 10%;
+  }
+  
+  .negrita {
+    font-weight: bold;
+    color: rgb(56, 161, 168);
+  }
+  .redes {
+    text-align: center;
+    display: inline-block;
+    height: 80%;
+    width: 90%;
+    background-color: #406882;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 5px;
+    margin-top: 8%;
+    position: relative;
+    left: 10%;
+  }
+  
+  footer img {
+    margin-top: 10px;
+  }
+  
+  .cuadro {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: solid 3px black;
+    overflow: visible;
+  }
+  
+  .formTitulo {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .form {
+    width: 75%;
+    background-color: #1a374d;
+    margin: 3rem auto;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .colorForm {
+    color: white;
+    margin: 15px;
+  }
+  
+  .enviar {
+    margin: 5px;
+    font-weight: 500px;
+    cursor: pointer;
+  }
+  
+  .lanzamientos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "lanzamiento1 lanzamiento2"
+      "lanzamiento3 lanzamiento4"
+      ". .";
+    justify-items: normal;
+    align-items: stretch;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+  }
+  
+  .lanzamientos a {
+    display: flex;
+    align-self: center;
+    border: #1a374d 1px solid;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #1a374d;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    margin: auto;
+  }
+  
+  .lanzamientos a:hover{
+    color: rgb(58, 166, 199);
+  }
+  
+  .lanzamiento1 {
+    grid-area: lanzamiento1;
+    box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    background-color: rgb(247, 247, 247);
+  }
+  
+  .lanzamiento1 img:hover{
+    transform: scale(1.5);
+    transition: .5s;
+  }
+  
+  .lanzamiento2 {
+    grid-area: lanzamiento2;
+    box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    background-color: rgb(247, 247, 247);
+  }
+  
+  .lanzamiento2 img:hover{
+    transform: scale(1.5);
+    transition: .5s;
+  }
+  
+  .lanzamiento3 {
+    grid-area: lanzamiento3;
+    box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    background-color: rgb(247, 247, 247);
+  }
+  
+  .lanzamiento3 video:hover{
+    transform: scale(1.5);
+    transition: .5s;
+  }
+  
+  .lanzamiento4 {
+    grid-area: lanzamiento4;
+    box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
+    background-color: rgb(247, 247, 247);
+  }
+  
+  .lanzamiento4 img:hover{
+    transform: scale(1.5);
+    transition: .5s;
+  }
+  
+  @media screen and (max-width: 677px) {
+    * {
+      overflow-x: hidden;
+    }
+    .header {
+      align-items: center;
+      grid-auto-rows: auto;
+      left: 0%;
+      right: 0%;
+    }
+    .lanzamientos {
+      grid-template-areas:
+        "lanzamiento1 lanzamiento1"
+        "lanzamiento2 lanzamiento2"
+        "lanzamiento3 lanzamiento3"
+        "lanzamiento4 lanzamiento4";
+      align-items: center;
+    }
+  
+    .pie {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .mediosPago {
+      height: 70%;
+      width: 50%;
+      right: 0%;
+    }
+  
+    .redes {
+      height: 70%;
+      width: 50%;
+      left: 0%;
+    }
+  
+    #padreFlex {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(3, 7, 41);
+      list-style: none;
+      margin-top: auto;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: nowrap;
+      position: relative;
+    }
+  }
+  
+  @media (min-width: 678px) and (max-width: 750px) {
+    .header {
+      align-items: center;
+      grid-auto-rows: auto;
+      left: 0%;
+      right: 0%;
+    }
+    .lanzamientos {
+      grid-template-areas:
+        "lanzamiento1 lanzamiento1"
+        "lanzamiento2 lanzamiento2"
+        "lanzamiento3 lanzamiento3"
+        "lanzamiento4 lanzamiento4";
+      align-items: center;
+    }
+    .pie {
+      align-content: center;
+      justify-content: center;
+    }
+    .redes {
+      width: 60%;
+      margin: 5%;
+      left: 13%;
+      margin-top: 1%;
+    }
+  
+    .mediosPago {
+      width: 60%;
+      margin: 5%;
+      left: 13%;
+    }
+  
+    .pie {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "mediosPago"
+        "redes";
+    }
+  
+    .mediosPago {
+      grid-area: mediosPago;
+    }
+  
+    .redes {
+      grid-area: redes;
+    }
+  }
+  
