@@ -499,3 +499,7 @@
   align-items: center;
   margin: auto;
 }
+
+.btn-group a{
+  background-color:#406882
+}

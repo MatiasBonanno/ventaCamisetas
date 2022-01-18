@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <header>
+    <header class="header container-fluid">
         <!-- Encabezado -->
         <!-- LOGO -->
         <a href="./index.html"> <img src="./img/logo.png" alt="" width="150"></a>
-        <nav>
-            <ul id="padreFlex">
+        <nav class="row">
+            <ul class="col-12" id="padreFlex">
                 <li id="hijoFlex"><a href="./index.html" class="cuadrosInd">Inicio</a></li>
                 <li id="hijoFlex"><a href="./indumentaria.html" class="cuadrosInd negrita">Indumentaria</a></li>
                 <li id="hijoFlex"><a href="./promociones.html" class="cuadrosInd">Promociones</a></li>
@@ -38,13 +38,11 @@
 
         <h1>Indumentaria</h1>
         <h2 class="banner">Camisetas</h2>
-        <nav class="contenedor">
-            <ul>
-                <li class="marca"><a class="marca" href="./indumentaria.html#adidas">Adidas</a></li>
-                <li class="marca"><a class="marca" href="./indumentaria.html#nike">Nike</a></li>
-                <li class="marca"><a class="marca" href="./indumentaria.html#nba">NBA</a></li>
-            </ul>
-        </nav>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="./indumentaria.html#adidas" button type="button" class="btn btn-primary">Adidas</button></a>
+            <a href="./indumentaria.html#nike" button type="button" class="btn btn-primary">Nike</button></a>
+            <a href="./indumentaria.html#nba" button type="button" class="btn btn-primary">NBA</button></a>
+          </div>
 
         <section class="imagenes">
 
