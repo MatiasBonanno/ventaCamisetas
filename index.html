@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
+
     <!-- link CSS bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- ACA SE INSERTA EL CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>MB Indumentaria Deportiva</title>
@@ -21,12 +22,12 @@
 
 <body>
 
-    <header class="header">
+    <header class="header container-fluid">
         <!-- Encabezado -->
         <!-- LOGO -->
         <a href="./index.html"> <img src="./img/logo.png" alt="" width="150"></a>
-        <nav>
-            <ul id="padreFlex">
+        <nav class="row">
+            <ul class="col-12" id="padreFlex">
                 <li id="hijoFlex"><a href="./index.html" class="negrita cuadrosInd">Inicio</a></li>
                 <li id="hijoFlex"><a href="./indumentaria.html" class="cuadrosInd">Indumentaria</a></li>
                 <li id="hijoFlex"><a href="./promociones.html" class="cuadrosInd">Promociones</a></li>
@@ -37,10 +38,10 @@
     </header>
 
     <!-- Contenido Principal -->
-    <main class="centrado">
+    <main class="centrado container-fluid">
 
-        <section>
-            <div>
+        <section class="row">
+            <div class="col-12">
                 <h1 class="espacio">MB Indumentaria Deportiva</h1>
                 <p class="presentacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat eum, ratione,
                     praesentium illo
@@ -56,41 +57,29 @@
 
         <h2 class="banner">Lanzamientos</h2>
 
-        <section class="lanzamientos">
-
-            <div class="lanzamiento1">
-                <h3>Camiseta Barcelona titular 2021/22</h3>
-                <img src="./img/camiseta-barcelona1.jpg" alt="Camiseta titular Barcelona" width="150">
-                <a href="#">Comprar</a>
-                <p>$9990</p>
-                <h6>hasta 6 cuotas sin interés de $1665</h6>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade row" data-bs-ride="carousel">
+            <div class="carousel-inner col-12 align-items-center">
+                <div class="carousel-item active">
+                    <img src="./img/camiseta-barcelona1.jpg" class="d-block w-100 col-4" alt="camiseta barcelona">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/camisetanba-gsw.jpg" class="d-block w-100 col-4" alt="camiseta gsw">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/camiseta-liverpool.jpg" class="d-block w-100 col-4" alt="camiseta liverpool">
+                </div>
             </div>
-
-            <div class="lanzamiento2">
-                <h3>Camiseta Golden State Warriors 2021/22</h3>
-                <img src="./img/camisetanba-gsw.jpg" alt="Camiseta GSW" width="150">
-                <a href="#">Comprar</a>
-                <p>$14990</p>
-                <h6>hasta 6 cuotas sin interés de $2498,33</h6>
-            </div>
-
-            <div class="lanzamiento3">
-                <h3>Camiseta FC Bayern Teamgeist</h3>
-                <video
-                    src="https://assets.adidas.com/videos/q_auto,f_auto,g_auto/b0c9f7bbea7e4a6493abadd600b85438_d98c/Camiseta_FC_Bayern_Teamgeist_Azul_H39911_video.mp4"
-                    controls width="330" loop autoplay muted>Camiseta FC Bayern</video>
-                <a href="#">Comprar</a>
-                <p>$9990</p>
-                <h6>hasta 6 cuotas sin interés de $1665</h6>
-            </div>
-
-            <div class="lanzamiento4">
-                <h3>Camiseta suplente PSG 2021/22</h3>
-                <img src="./img/camiseta-psg2.jpg" alt="Camiseta suplente PSG" width="150">
-                <a href="#">Comprar</a>
-                <p>$8990</p>
-                <h6>hasta 6 cuotas sin interés de $1498,33</h6>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
 
         </section>
 
@@ -115,6 +104,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

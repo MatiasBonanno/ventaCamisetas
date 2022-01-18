@@ -31,6 +31,10 @@
     left: 0%;
     right: 0%;
   }
+
+  header a img{
+    width: 23%;
+  }
   
   .espacio {
     margin-top: 3%;
@@ -56,7 +60,8 @@
   }
   
   .cuadrosInd:hover{
-    border-color: #4a7694;
+    border-color: #406882;
+    color: cadetblue;
   }
   
   nav ul {
@@ -488,3 +493,9 @@
     }
   }
   
+.carousel-inner{
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
