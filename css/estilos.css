@@ -302,6 +302,11 @@
     font-weight: 500px;
     cursor: pointer;
   }
+
+  .enviar:hover{
+    color: white;
+    background-color: black;
+  }
   
   .lanzamientos {
     display: grid;
@@ -513,3 +518,4 @@
 .btn-group a{
   background-color:#406882
 }
+

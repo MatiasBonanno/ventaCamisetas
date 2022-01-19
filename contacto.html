@@ -38,14 +38,14 @@
     <main>
         <h1>Contacto</h1>
 
-        <section>
+        <section class="container">
 
-            <form class="form" action="#" method="GET">
+            <form class="form row" action="#" method="GET">
                 <h3 class="formTitulo">Formulario de Contacto</h3>
-                <input type="text" placeholder="Nombre" name="Nombre" label="enviar-nombre">
-                <input type="text" placeholder="Apellido" name="Apellido">
-                <input type="email" placeholder="email (obligatorio)" required>
-                <input type="tel" placeholder="Teléfono" name="Teléfono">
+                <input class="col-6" type="text" placeholder="Nombre" name="Nombre" label="enviar-nombre">
+                <input class="col-6" type="text" placeholder="Apellido" name="Apellido">
+                <input class="col-6 justify-content-between align-items-center" type="email" placeholder="email (obligatorio)" required>
+                <input class="col-6 justify-content-between align-items-center" type="tel" placeholder="Teléfono" name="Teléfono">
 
                 <!-- Menú desplegable -->
                 <div>
@@ -66,7 +66,7 @@
 
                 <textarea name="comentario" id="comentario" placeholder="Ingrese comentario" cols="80"
                     rows="6"></textarea>
-                <input class="enviar" type="submit" for="enviar-nombre" name="Enviar">
+                <input class="enviar col-auto align-self-end" type="submit" for="enviar-nombre" name="Enviar">
 
             </form>
         </section>
