@@ -334,6 +334,16 @@
     align-content: space-around;
     margin: auto;
   }
+
+  .carousel-item a{
+    color: white;
+    background-color: #1e1e39;
+    text-decoration: none;
+  }
+
+  .carousel-item a:hover{
+    color: cadetblue;
+  }
   
   .lanzamientos a:hover{
     color: rgb(58, 166, 199);
