@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo.png">
+    <script src="https://kit.fontawesome.com/de6914c581.js" crossorigin="anonymous"></script>
     <!-- Fuente externa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,19 +21,40 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+            <div class="row">
+                <!-- LOGO -->
+                <a class="navbar-brand col-12" href="./index.html"> <img src="./img/logo.png" alt="" width="150"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-    <header class="header container-fluid">
-        <!-- Encabezado -->
-        <!-- LOGO -->
-        <a href="./index.html"> <img src="./img/logo.png" alt="" width="150"></a>
-        <nav class="row">
-            <ul class="col-12" id="padreFlex">
-                <li id="hijoFlex"><a href="./index.html" class="cuadrosInd">Inicio</a></li>
-                <li id="hijoFlex"><a href="./indumentaria.html" class="cuadrosInd">Indumentaria</a></li>
-                <li id="hijoFlex"><a href="./promociones.html" class="cuadrosInd">Promociones</a></li>
-                <li id="hijoFlex"><a href="./quienessomos.html" class="cuadrosInd">Quienes Somos</a></li>
-                <li id="hijoFlex"><a href="./contacto.html" class="cuadrosInd negrita">Contacto</a></li>
-            </ul>
+            <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto col-12">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./indumentaria.html">Indumentaria</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./promociones.html">Promociones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+            </div>
         </nav>
     </header>
 

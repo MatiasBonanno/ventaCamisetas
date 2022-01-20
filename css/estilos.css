@@ -11,30 +11,6 @@
     background-size: cover;
   }
   
-  header {
-    display: flex;
-    text-align: center;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 11%,
-      rgba(255, 255, 255, 1) 19%,
-      rgba(2, 0, 36, 1) 46%
-    );
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    left: 0%;
-    right: 0%;
-  }
-
-  header a img{
-    width: 23%;
-  }
   
   .espacio {
     margin-top: 3%;
@@ -189,26 +165,6 @@
     color: white;
   }
   
-  /* flexbox */
-  #padreFlex {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(3, 7, 41);
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-    position: relative;
-  }
-  
-  #hijoFlex {
-    background-color: rgb(9, 55, 77);
-    color: black;
-    padding: 0.2em;
-    border: solid 3px black;
-    margin: 0%;
-  }
   
   .medio {
     margin: auto;
@@ -410,12 +366,7 @@
     * {
       overflow-x: hidden;
     }
-    .header {
-      align-items: center;
-      grid-auto-rows: auto;
-      left: 0%;
-      right: 0%;
-    }
+  
     .lanzamientos {
       grid-template-areas:
         "lanzamiento1 lanzamiento1"
@@ -444,27 +395,10 @@
       left: 0%;
     }
   
-    #padreFlex {
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(3, 7, 41);
-      list-style: none;
-      margin-top: auto;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: nowrap;
-      position: relative;
-    }
   }
   
   @media (min-width: 678px) and (max-width: 750px) {
-    .header {
-      align-items: center;
-      grid-auto-rows: auto;
-      left: 0%;
-      right: 0%;
-    }
+   
     .lanzamientos {
       grid-template-areas:
         "lanzamiento1 lanzamiento1"
