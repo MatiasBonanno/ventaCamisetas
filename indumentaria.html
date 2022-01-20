@@ -22,40 +22,41 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-            <div class="row">
-                <!-- LOGO -->
-                <a class="navbar-brand col-12" href="./index.html"> <img src="./img/logo.png" alt="" width="150"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand col-5" href="./index.html"><img src="./img/logo.png" width="40%" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
+                <div class="collapse navbar-collapse col-7" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Indumentaria
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./indumentaria.html#adidas">Adidas</a></li>
+                                <li><a class="dropdown-item" href="./indumentaria.html#nike">Nike</a></li>
+                                <li><a class="dropdown-item" href="./indumentaria.html#nba">NBA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
 
-            <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto col-12">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Inicio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./indumentaria.html">Indumentaria<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./promociones.html">Promociones</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -72,6 +73,7 @@
             <a href="./indumentaria.html#nba" button type="button"
                 class="btn btn-primary col-6 btn-dark">NBA</button></a>
         </div>
+
 
         <section class="imagenes">
 
