@@ -563,3 +563,8 @@
   transition: opacity .15s ease;
   flex-direction: row;
 }
+
+.carousel-control-prev,
+.carousel-control-next{
+  filter: invert(100%);
+}
