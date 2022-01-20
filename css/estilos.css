@@ -24,27 +24,23 @@
     font-size: 1.1em;
   }
   
-  .cuadrosInd {
-    border: solid rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    background-color: rgb(3, 7, 41);
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.4em;
-    position: relative;
-    max-width: 400px;
+  nav ul li{
+    background-color: rgb(8, 58, 73);
+    text-align: center;
+  }
+
+  nav li {
+    flex: auto;
+    border: #1a374d 2px solid;
+    color: white;
+  }
+
+
+  nav ul li:hover{
+    border-color: rgb(56, 161, 168);
   }
   
-  .cuadrosInd:hover{
-    border-color: #406882;
-    color: cadetblue;
-  }
-  
-  nav ul {
-    display: flex;
-    background-color: #1a374d;
-  }
-  
+
   .contenedor {
     display: inline;
     color: white;
@@ -59,11 +55,6 @@
     color: #406882;
   }
   
-  nav li {
-    flex: auto;
-    border: #1a374d 2px solid;
-    color: white;
-  }
   
   .centrado {
     text-align: center;
@@ -140,23 +131,6 @@
     align-items: center;
   }
   
-  ul {
-    list-style-type: square;
-  }
-  
-  ul ul {
-    position: absolute;
-    width: 100%;
-    top: 1rem;
-    left: 0.5rem;
-    color: rgb(8, 8, 37);
-    text-decoration: none;
-    display: none;
-  }
-  
-  ul ul li {
-    display: block;
-  }
   
   .banner {
     background-color: #1e1e39;
@@ -394,7 +368,6 @@
       width: 50%;
       left: 0%;
     }
-  
   }
   
   @media (min-width: 678px) and (max-width: 750px) {
