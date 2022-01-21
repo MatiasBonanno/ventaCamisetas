@@ -24,6 +24,14 @@ body {
   font-size: 1.1em;
 }
 
+.nav-item:hover{
+  background-color: lightslategray;
+}
+
+header .container{
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(3,33,60,1) 100%);
+}
 
 
 .contenedor {
@@ -356,7 +364,13 @@ footer img {
 }
 
 @media (min-width: 678px) and (max-width: 750px) {
- 
+  header .container{
+  align-items: center;
+  grid-auto-rows: auto;
+  left: 0%;
+  right: 0%;
+}
+
   .lanzamientos {
     grid-template-areas:
       "lanzamiento1 lanzamiento1"
