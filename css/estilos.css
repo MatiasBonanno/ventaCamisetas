@@ -474,3 +474,10 @@ flex-direction: row;
 .carousel-control-next{
 filter: invert(100%);
 }
+
+
+.container { 
+  background: gray; 
+  min-width: 100vw;
+  margin-top: -10px;
+ }
