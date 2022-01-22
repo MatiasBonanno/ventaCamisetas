@@ -476,8 +476,8 @@ filter: invert(100%);
 }
 
 
-.container { 
-  background: gray; 
+.container {
+  background-color: #1a374d;
   min-width: 100vw;
   margin-top: -10px;
- }
+}
