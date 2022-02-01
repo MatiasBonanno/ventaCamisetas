@@ -9,6 +9,7 @@ body {
   background-image: url(https://img.freepik.com/vector-gratis/diseno-fondo-blanco-estilo-perspectiva-3d-forma-hexagonal_1017-27558.jpg?size=626&ext=jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .espacio {
@@ -48,6 +49,10 @@ header .container{
   color: #406882;
 }
 
+/* eliminar scroll innecesario */
+p,h1,h2,h3{
+  overflow: hidden;
+}
 
 .centrado {
   text-align: center;
@@ -277,57 +282,6 @@ footer img {
   color: rgb(58, 166, 199);
 }
 
-.lanzamiento1 {
-  grid-area: lanzamiento1;
-  box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  background-color: rgb(247, 247, 247);
-}
-
-.lanzamiento1 img:hover{
-  transform: scale(1.5);
-  transition: .5s;
-}
-
-.lanzamiento2 {
-  grid-area: lanzamiento2;
-  box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  background-color: rgb(247, 247, 247);
-}
-
-.lanzamiento2 img:hover{
-  transform: scale(1.5);
-  transition: .5s;
-}
-
-.lanzamiento3 {
-  grid-area: lanzamiento3;
-  box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  background-color: rgb(247, 247, 247);
-}
-
-.lanzamiento3 video:hover{
-  transform: scale(1.5);
-  transition: .5s;
-}
-
-.lanzamiento4 {
-  grid-area: lanzamiento4;
-  box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -webkit-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: 9px 10px 8px 0px rgba(0, 0, 0, 0.61);
-  background-color: rgb(247, 247, 247);
-}
-
-.lanzamiento4 img:hover{
-  transform: scale(1.5);
-  transition: .5s;
-}
 
 @media screen and (max-width: 677px) {
   * {
